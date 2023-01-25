@@ -19,34 +19,20 @@ Active Directory (AD) is a database and set of services that connect users with 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- step 1 create subscribtion
-- Step 2
+ Create Resource
+
+<img src=https://i.imgur.com/fdHvDcQ.png" height="80%" width="80%" alt="2. "/>
+
+<img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. "/>
+
+
+
+
+
+
 - Step 3
 - Step 4
 
-<h2>Deployment and Configuration Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
+<img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. "/>
+<img src="https://i.imgur.com/EuDoPB6.png" height="80%" width="80%" alt="3. "/>
+<img src=https://i.imgur.com/fdHvDcQ.png" height="80%" width="80%" alt="1. "/>
