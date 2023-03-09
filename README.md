@@ -79,78 +79,90 @@ Active Directory (AD) is a database and set of services that connect users with 
 
 
 <p>
-Navigate back to the virtual machine "DC-1", bring up the Server Manager. If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
+Going back to DC-1", open the Server Manager, it should already be open. or select the start menu and search it. Click "Add roles and features", follow the prompts.select "Server Roles", check "Active Directory Domain Services" and
+continue to follow all installaion until it done.
 </p>
 <p>
 <img src="https://i.imgur.com/zG16QBV.png" height="80%" width="80%" alt="Active dirctory" Steps"/>
 </p>
+<p>
+<img src="https://i.imgur.com/y8hU38D.png" height="80%" width="80%" alt="AD" Steps"/>
+</p>
+Click the flag with a yellow warning sign and click "Promote this server to a domain controller".
+</p>
+<p>
+<img src="https://i.imgur.com/jHJee1y.png" height="80%" width="80%" alt="activedirectory" Steps"/>
+</p>
 <br />
 
+<p> 
+ Domain controller will restart and add updates to DC-1. 
+ Once it's completed Log into the virtual machine with domain name/username and password
 <p>
-You still have to promote "DC-1" to a Domain Controller. Click the flag with a yellow warning sign and click "Promote this server to a domain controller".
+<img src="https://i.imgur.com/l6S8LQn.png" height="80%" width="80%" alt="DC1" Steps"/>
 </p>
-<p>
-<img src="https://i.imgur.com/jHJee1y.png" height="80%" width="80%" alt="activeirectory" Steps"/>
-</p>
-<br />
 
-<p>
-The computer will restart and disconnect. Log into the virtual machine with "< domain name >/< username >" then enter the password and hit enter.
-</p>
-<br />
+
+<h3>Create an administrator and regular account in Active Directory </h3>
+Open the server manger, click Tools,then click Active directory users and computers
+
   
-<p>
-Open the Server manager, click "Tools", then click "Active Directory Users and Computers"
-<p>
-<p>
-<img src="https://i.imgur.com/hSi9f3x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
 
-<p>
+<img src="https://i.imgur.com/hSi9f3x.png" height="80%" width="80%" alt="D S Steps"/>
+
+<p
 Right-click on your domain name to create a couple new organizational units. One named "EMPLOYEES" and the other named "ADMINS".
 </p>
 <p>
-<img src="https://i.imgur.com/pnjPRLE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NbzijVW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
   
 <p>
 Create a new user in "EMPLOYEES", and assign them to the "Domain Admins" group.
 </p>
-<p>
-<img src="https://i.imgur.com/S6tn9hv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-  
-<p>
-Log out of "DC-1" and log back in with the new user with admin permission.
-</p>
-  
-<h1>Joining Client-1 to the Domain With Azure</h1>
 
 <p>
-Head back to Microsoft Azure virtual machines, click "Client-1", click "Networking", then click "Client-192".
-<p>
-<p>
-<img src="https://i.imgur.com/TIorBOa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7RV8jxp.png" height="80%" width="80%" alt="ADMIN A Steps"/>
 </p>
-<br /> 
+
+<p>
+<img src="https://i.imgur.com/XO25pkZ.png" height="80%" width="80%" alt="k n Steps"/>
+</p>
+
+ <p>
+ <img src="https://i.imgur.com/oaklLo6.png" height="80%" width="80%" alt="k n DZ "/>
+ </p>
+
+
+<p>   
+Log out of "DC-1" as Labuser and log back in as the admin account (jane_admin)
+</p>
+  
+<h3>Join Client to the Domain </h3>
+
+<p>
+To do this Head back to Microsoft Azure virtual machines, click "Client-1", click on "Networking" 
+</p>
+
+<p>
+<img src="https://i.imgur.com/YYIEwPK.png" height="80%" width="80%" alt="Admin Steps"/>                                                                                                                                        </p>
+
   
 
 <p>
-Click "DNS Servers", click "Custom", and paste the Private IP of "DC-1". Save, then restart "Client-1" through Azure.
+ Click "DNS Servers", Then click "Custom",
 </p>
 <p>
-<img src="https://i.imgur.com/D6Aqdgl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/8Zn5ky9.png" height="80%" width="80%" alt="Domain Steps"/>
 </p>
-<br /> 
-  
+<br /> Copy and paste the Private IP of "DC-1". Save, then restart "Client-1" through Azure.
+<img src="https://i.imgur.com/mrQOfDW.png" height="80%" width="80%" alt="DNSs"/>
 <p>
-Log into "Client-1" as the original admin user (the one you created with the VM). Search "Settings" and open it, click "About", click "Rename this PC (advanced)". A window will pop up, click "Change...", click "Domain" and enter your domain. Another window will pop up, log in with a user that has admin privileges.
+ok so log back into "Client-1" Search "Settings" and open it,on the rightside of your screen click"Rename this PC (advanced)". A window will pop up, click "Change...", enter your domain name.
 </p>
 <p>
-<img src="https://i.imgur.com/kHpYsn6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xaYQFK3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p/>
   
@@ -158,7 +170,7 @@ Log into "Client-1" as the original admin user (the one you created with the VM)
 Log into "DC-1" and navigate to "Active Directory Users and Computers" in the Server Manager. Click "Computers" to see if "Client-1" appears. Create a new organizational unit named "Clients" and drag "Client-1" into it.
 </p>
 <p>
-<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt="my active_directory"/>
+<img src="https://i.imgur.com/xaYQFK3.png" height="80%" width="80%" alt="my active_directory"/>
 </p>
 
 <h1>Configuring Remote Desktop for Non-administrator Users</h1>
