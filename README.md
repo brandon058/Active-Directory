@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+Active Directory Deployed in the Cloud (Azure)</h1>
 Active Directory (AD) is a database and set of services that connect users with the network resources they need to get their work done. 
 
 <h2>Environments and Technologies Used</h2>
@@ -119,7 +119,7 @@ Log into "Client-1" as the original admin user (the one you created with the VM)
 Log into "DC-1" and navigate to "Active Directory Users and Computers" in the Server Manager. Click "Computers" to see if "Client-1" appears. Create a new organizational unit named "Clients" and drag "Client-1" into it.
 </p>
 <p>
-<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt="my actice_directory"/>
+<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt="my active_directory"/>
 </p>
 
 <h1>Configuring Remote Desktop for Non-administrator Users</h1>
@@ -128,7 +128,7 @@ Log into "DC-1" and navigate to "Active Directory Users and Computers" in the Se
 Log into "DC-1" and navigate to "Settings". Click "Remote Desktop", click "Select users that can remotely access this PC". Click "Add...". Add "Domain Users" and click "Ok".
 </p>
 <p>
-<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt=my active dictory"Steps"/>
 </p>
 <br />
 
@@ -137,6 +137,5 @@ Any user who is in your domain may now connect to the virtual machine.
 
 
 
-<img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. "/>
 
 
