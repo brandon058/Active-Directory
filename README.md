@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-Active Directory Deployed in the Cloud (Azure)</h1>
+<h1>Active Directory Deployed in the Cloud (Azure)</h1>
 
 Active Directory (AD) is a database and set of services that connect users with the network resources they need to get their work done. 
 
@@ -17,12 +17,33 @@ Active Directory (AD) is a database and set of services that connect users with 
 
 - Windows Server 2022
 - Windows 10 (21H2)
-- First step is to create to two Azure virtual machines.
 
-<img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. "/>
+<h2> Configuration Steps</h2>
+   
+  
+  -1:Setup resources in microsoft Azure   
+  
+  -2:Establish connectivity between the client and Domain Controller
+  
+  -3:Install active Directory
+ 
+  -4:Create an administrator and regular account in Active Directory 
+ 
+  -5:Join client to Domain 
+ 
+  -6:Setup Remote Desktop for non -administrative users
+    
 
-SET THE IP ADDRESS TO STATIC
+<h3> Setup resource in microsoft Azure</h3>
+ 
+ First we need to create two virtual machine. The first one will be (Client-1) will be using windows 22
+ and (DC-1) will have windows 10. Be sure to keep both virtual machines in the same Region.
+ 
+
+<img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. DC-1 VM"/>
 <img src="https://i.imgur.com/epKINcm.png" height="80%" width="80%" alt="2.client-1 VM"/>
+   
+   SET THE IP ADDRESS TO STATIC
 <img src="https://imgur.com/lmcuYCn.png" height="80%" width="80%" alt="1. "/>
                    
 <img src="https://i.imgur.com/MhfRJiH.png" height="80%" width="80%" alt="1. "/>
