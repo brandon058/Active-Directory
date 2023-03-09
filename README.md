@@ -43,24 +43,40 @@ Active Directory (AD) is a database and set of services that connect users with 
 <img src="https://i.imgur.com/XbuO2GD.png" height="80%" width="80%" alt="1. DC-1 VM"/>
 <img src="https://i.imgur.com/epKINcm.png" height="80%" width="80%" alt="2.client-1 VM"/>
    
-   SET THE IP ADDRESS TO STATIC
-<img src="https://imgur.com/lmcuYCn.png" height="80%" width="80%" alt="1. "/>
-                   
-<img src="https://i.imgur.com/MhfRJiH.png" height="80%" width="80%" alt="1. "/>
+   
+   <p>
+   Navigate to DC-1"s Networking section and set the IP Address to static
 
+<p>
+<img src="https://imgur.com/lmcuYCn.png" height="80%" width="80%" alt="1. "/>
+</p>   
+ 
+  Click on IP config            
+
+ <p>
+ <img src="https://i.imgur.com/MhfRJiH.png" height="80%" width="80%" alt="1. "/>
+ </p>   
+   
+ Look for the private IP address.Click the Assignment and set to static.
+
+<p>
 <img src="https://i.imgur.com/6TmBUu1.png" height="80%" width="80%" alt="3. "/>
 
-ENSURE CONNNECTION BETWEEN DC-1 AND CLIENT-1
- log into client-1 and ping Dc-1
-<img src="https://i.imgur.com/hhelYIM.png" height="80%" width="80%" alt="1. "/>
+
+
+<h3>Establish connectivity between the client and Domain Controller</h3>
+<p>
+
+ Ensure connection between DC-1 and Client-1. log into client-1 open the command line and type ping-t to ping Dc-1.
+
+ <img src="https://i.imgur.com/hhelYIM.png" height="80%" width="80%" alt="1. "/>
  <img src="https://i.imgur.com/axnzdcP.png" height="80%" width="80%" alt="1. "/>   
  <img src="https://i.imgur.com/gqQwYO8.png" height="80%" width="80%" alt="1. "/> 
 
 
+<h3>Install active Directory</h3>
 
-- Step 4
 
-<h1>Back Inside the Virtual Machine of DC-1</h1>
 
 <p>
 Navigate back to the virtual machine "DC-1", bring up the Server Manager. If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
@@ -135,7 +151,7 @@ Log into "Client-1" as the original admin user (the one you created with the VM)
 <p>
 <img src="https://i.imgur.com/kHpYsn6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
+<p/>
   
 <p>
 Log into "DC-1" and navigate to "Active Directory Users and Computers" in the Server Manager. Click "Computers" to see if "Client-1" appears. Create a new organizational unit named "Clients" and drag "Client-1" into it.
