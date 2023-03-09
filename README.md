@@ -44,7 +44,7 @@ Active Directory (AD) is a database and set of services that connect users with 
 <img src="https://i.imgur.com/epKINcm.png" height="80%" width="80%" alt="2.client-1 VM"/>
    
    
-   <p>
+   
    Navigate to DC-1"s Networking section and set the IP Address to static
 
 <p>
@@ -163,28 +163,57 @@ ok so log back into "Client-1" Search "Settings" and open it,on the rightside of
 </p>
 <p>
 <img src="https://i.imgur.com/xaYQFK3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p/>
-  
-<p>
-Log into "DC-1" and navigate to "Active Directory Users and Computers" in the Server Manager. Click "Computers" to see if "Client-1" appears. Create a new organizational unit named "Clients" and drag "Client-1" into it.
-</p>
-<p>
-<img src="https://i.imgur.com/xaYQFK3.png" height="80%" width="80%" alt="my active_directory"/>
-</p>
 
-<h1>Configuring Remote Desktop for Non-administrator Users</h1>
-  
+<h3>Configuring Remote Desktop for Non-administrator Users</h3>
+    This time log in using the domaine name and the admin account (mydomaine.com/jane_admin).
+    after you are logged in.client-1 is going to restart.
 <p>
-Log into "DC-1" and navigate to "Settings". Click "Remote Desktop", click "Select users that can remotely access this PC". Click "Add...". Add "Domain Users" and click "Ok".
-</p>
-<p>
-<img src="https://i.imgur.com/3EmViVb.png" height="80%" width="80%" alt=my active dictory"Steps"/>
-</p>
-<br />
 
-<p>
-Any user who is in your domain may now connect to the virtual machine.
+
+
+<img src="https://i.imgur.com/BsJtyy1.png" height="80%" width="80%" alt="notice"/>
+
+
+
+
+
+
+
+
+
+<img src="https://i.imgur.com/TLAfjB6.png" height="80%" width="80%" alt="Active"/>
+
+
+
+
+
+
+
+<img src="https://i.imgur.com/GOOr9u8.png"height="80%" width="80%" alt="1. "/>
+
+
+
+
+
+
+
+
+
+
+<img src="https://i.imgur.com/QBzIyzY.png" height="80%" width="80%" alt="Admin Steps"/> 
+  
+  
+  
+  
+  Log into "DC-1" and open to "Active Directory Users and Computers"click on the flolder name Users . then double Click on Domaine users
+  anyone whos in domane user group should be allow to log in to client-1.
+
+<img src="https://i.imgur.com/8cMmP1e.png" height="80%" width="80%" alt="my active_directory"/>
+
+
+
+
+
 
 
 
