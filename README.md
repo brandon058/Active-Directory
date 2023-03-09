@@ -82,7 +82,7 @@ Active Directory (AD) is a database and set of services that connect users with 
 Navigate back to the virtual machine "DC-1", bring up the Server Manager. If not already open, open the start menu and search it. Click "Add roles and features", and go through the installer. Once you get to "Server Roles", check the box beside "Active Directory Domain Services" and finish the installer.
 </p>
 <p>
-<img src="https://i.imgur.com/zG16QBV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zG16QBV.png" height="80%" width="80%" alt="Active dirctory" Steps"/>
 </p>
 <br />
 
@@ -90,7 +90,7 @@ Navigate back to the virtual machine "DC-1", bring up the Server Manager. If not
 You still have to promote "DC-1" to a Domain Controller. Click the flag with a yellow warning sign and click "Promote this server to a domain controller".
 </p>
 <p>
-<img src="https://i.imgur.com/jHJee1y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jHJee1y.png" height="80%" width="80%" alt="activeirectory" Steps"/>
 </p>
 <br />
 
@@ -133,10 +133,11 @@ Log out of "DC-1" and log back in with the new user with admin permission.
 Head back to Microsoft Azure virtual machines, click "Client-1", click "Networking", then click "Client-192".
 <p>
 <p>
-<img src="https://i.imgur.com/fDAzj4x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TIorBOa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br /> 
   
+
 <p>
 Click "DNS Servers", click "Custom", and paste the Private IP of "DC-1". Save, then restart "Client-1" through Azure.
 </p>
