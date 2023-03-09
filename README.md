@@ -3,6 +3,7 @@
 </p>
 
 Active Directory Deployed in the Cloud (Azure)</h1>
+
 Active Directory (AD) is a database and set of services that connect users with the network resources they need to get their work done. 
 
 <h2>Environments and Technologies Used</h2>
