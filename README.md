@@ -157,8 +157,9 @@ To do this Head back to Microsoft Azure virtual machines, click "Client-1", clic
 <img src="https://i.imgur.com/8Zn5ky9.png" height="80%" width="80%" alt="Domain Steps"/>
 </p>
 <br /> Copy and paste the Private IP of "DC-1". Save, then restart "Client-1" through Azure.
-<img src="https://i.imgur.com/mrQOfDW.png" height="80%" width="80%" alt="DNSs"/>
-<p>
+<img src="https://i.imgur.com/lTkiGzN.png" height="80%" width="80%" alt="DNSs"/>
+<p> 
+   
 ok so log back into "Client-1" Search "Settings" and open it,on the rightside of your screen click"Rename this PC (advanced)". A window will pop up, click "Change...", enter your domain name.
 </p>
 <p>
@@ -169,17 +170,20 @@ ok so log back into "Client-1" Search "Settings" and open it,on the rightside of
     after you are logged in.client-1 is going to restart.
 <p>
 <img src="https://i.imgur.com/BsJtyy1.png" height="80%" width="80%" alt="notice"/>
+    
+   Go back to Client-1 and "Right click" to open system properties.
 <img src="https://i.imgur.com/TLAfjB6.png" height="80%" width="80%" alt="Active"/>
+</p>
+    Select users that can remotely access this PC to Add Domaine user group.
+<img src="https://i.imgur.com/gnAcPyL.png" height="80%" width="80%" alt="configu"/>
+  
 
-  
-  
-  
-  
-  Log into "DC-1" and open to "Active Directory Users and Computers"click on the flolder name Users . then double Click on Domaine users
+  Log into "DC-1" and open up "Active Directory Users and Computers"click on the flolder name Users . then double Click on Domaine users
   anyone whos in domane user group should be allow to log in to client-1.
 
-<p> </p><img src="https://i.imgur.com/8cMmP1e.png" height="80%" width="80%" alt="my active_directory"/>
-
+<p>
+<img src="https://i.imgur.com/8cMmP1e.png" height="80%" width="80%" alt="my active_directory"/>
+</P>
 
 
 
